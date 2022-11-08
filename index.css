@@ -17,7 +17,7 @@ body {
 .about-img {
     width: 50%;
     border-radius: 25%;
-    border: solid gold 5px;
+    border: solid#c4c3d0 8px;
 }
 .name {
     font-size: 35px;
@@ -129,5 +129,5 @@ body {
 /* --------------ICONS-------------- */
 
 .portfolio-icon {
-    font-size: 6.2rem;
+    font-size: 6.3rem;
 }
