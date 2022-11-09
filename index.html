@@ -165,7 +165,7 @@
             </div>
         </div>
     </div>
-    <!------------------- My Contact Informations------------------------- -->
+    <!------------------- My Contact Information------------------------- -->
     <div class="row-contact mt-5">
         <div class="col-11 mx-auto">
             <div class="row">
@@ -191,33 +191,39 @@
                 </div>
                 <div class="col-md-6">
                     <p class="reachout">Send Me <span class="reached">Message</span>Here</p>
-                    <div class="mb-3 mt-4">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3 mt-5">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-danger mt-5">Submit</button>
+                    <div class="form-group">
+                        <form target="_blank" action="https://formsubmit.co/clement.buadu@gmail.com" method="POST">
+                          <div class="form-group">
+                            <div class="form-row">
+                              <div class="col">
+                                <input type="text" name="name" class="form-control mb-3 mt-4" placeholder="Full Name" required>
+                              </div>
+                              <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mb-3 mt-4">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-lg btn-danger btn-block mb-3 mt-4">Send</button>
+                        </form>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- -------------Footer--------------------------------------------- -->
     <div class="row footer">
         <div class="col-11">
             <div class="row">
                 <section class="col-md-4">
                     <img src="https://newsghana.com.gh/wp-content/uploads/2017/05/ghana-v-usa-1402955641.jpg" alt="">
-                    <a class="create justify-content-center">Created by <span>@Cbuadu</span></a>
+                    <a class="create justify-content-center">Created by<span>@Cbuadu</span></a>
                 </section>
             </div>
         </div>
     </div>
 
 </body>
-
 </html>
