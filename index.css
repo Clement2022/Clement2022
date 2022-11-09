@@ -131,3 +131,6 @@ body {
 .portfolio-icon {
     font-size: 6.3rem;
 }
+.btn-outline{
+    border: solid red 8px;
+}
