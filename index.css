@@ -119,18 +119,15 @@ body {
 
 /* ----------Card Section------------------ */
 .card-body li {
-    font-size: 23.04px;
+    font-size: 21px;
 }
 
 .card-body .card-text {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 /* --------------ICONS-------------- */
 
 .portfolio-icon {
     font-size: 6.3rem;
-}
-.btn-outline{
-    border: solid red 8px;
 }
