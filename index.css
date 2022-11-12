@@ -61,7 +61,7 @@ body {
     align-items: center;
 }
 .text span {
-    font-family: 'oswald' sans-serif;
+    font-family: 'Xanh Mono' sans-serif;
     color: red;
 }
 
@@ -107,7 +107,7 @@ body {
     height: 9vh;
     border-radius: 50%;
 }
-.create span {
+.create span, .create {
     color: red;
    
 }
