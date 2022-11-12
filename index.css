@@ -83,12 +83,12 @@ body {
 .reached{
     color: red;
     font-size: 30px;
-    margin-right: 2px;
-    font-family: 'oswald' sans-serif;
+    margin-right: 2px; 
+    font-family: 'Xanh Mono' sans-serif;
 }
 .reachout {
     font-size: 30px;
-    font-family: 'oswald' sans-serif;
+    font-family: 'Xanh Mono' sans-serif;
 }
 .form-label{
     color: rgb(255, 255, 240);
@@ -107,7 +107,7 @@ body {
     height: 9vh;
     border-radius: 50%;
 }
-.create span, .create {
+.create span {
     color: red;
    
 }
