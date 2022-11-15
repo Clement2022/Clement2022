@@ -1,11 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Xanh+Mono&display=swap');
 
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+  
+:root {
+    --card-height: 40vh;
+}
+  
+
 body {
     background-color: #b2beb5;
     height: 100vh;
 }
-
+  
 .navbar {
     background-color: #414a4c;
 
@@ -35,18 +55,7 @@ body {
     font-size: 30px;
     font-family: 'Raleway' sans-serif;
 }
-@media (min-width: 414px) {
-    .job-tittle {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
 
-    .location {
-        font-size: 20px;
-    }
-    
-}
 .myname {
     font-size: 25px;
     font-family: 'Xanh Mono' sans-serif;
@@ -118,12 +127,9 @@ body {
 }
 
 /* ----------Card Section------------------ */
-.card-body li {
-    font-size: 21px;
-}
 
 .card-body .card-text {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /* --------------ICONS-------------- */
@@ -131,3 +137,50 @@ body {
 .portfolio-icon {
     font-size: 6.3rem;
 }
+
+.card {
+    background: #bcd4e6;
+    width: var(--card-width);
+    height: var(--card-height); 
+}
+
+.card:hover:before, .card:hover:after {
+    opacity: 0;
+}
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #00ffff, #ffff31 43%, #0000ff);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+}
+  
+.card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 10);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #00ffff, #3c67e3 43%, #3f00ff);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+  
+  
+  
