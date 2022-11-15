@@ -31,7 +31,8 @@ body {
 
 }
 .navbar-brand img {
-    width: 100px; 
+    width: 60px;
+    border-radius: 50%; 
 } 
 
 .about-img {
@@ -43,12 +44,7 @@ body {
     font-size: 35px;
 }
 
-.job-tittle {
-    font-size: 80px;
-    font-family: 'Oswald' sans-serif;
-    align-items: center;
-    color: blue;
-}
+
 .work-exp {
     align-items: center;
     color: rgba(1, 11, 20, 0.725);
